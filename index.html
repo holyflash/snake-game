@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="snake_ico.png" type="image/x-icon">
+	<title>Snake</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <span id="localIp"></span> -->
+	<script src="ip.js"></script> 
+	
+	<div class="menu">
+		<div>
+			<button class="newGame valarant">New Game</button>
+			<button class="setting valarant">Setting</button>
+		</div>
+	</div>	
+
+	<div class="settingMenu">
+		<div class="contentMenu">
+			<div class="changeMusic">
+				<div class="lolec">Change Music</div>
+				<label><input type="radio" name="music" class="musicSandstorm lol" value="sandstorm" checked="true">SandStorm</label>
+				<label><input type="radio" name="music" class="musicGas lol" value="gas">GAS</label>
+				<label><input type="radio" name="music" class="musicOp lol" value="op">90s</label>
+			</div>
+
+			<div class="selectMode">
+				<div>Select a game mode</div>
+				<span class="easy changeLevel" data-memes="easy">Disabled Brain</span>
+				<span class="norm changeLevel" data-memes="norm">Without Hand</span>
+				<span class="hard changeLevel" data-memes="hard">Default</span>
+				<span class="imposible changeLevel" data-memes="imposible">Impossible</span>
+				<span class="save changeLevel" data-memes="save">VALORANT</span>
+			</div>
+		</div>
+
+		<label class="selectW">
+			<input class="selectWall" type="checkbox" checked="checked">
+			<span>Remove walls</span>
+		</label>
+
+		<div class="keyBack">
+			<button class="back">
+				save and back
+			</button>
+			<div>
+				or press "Esc"
+			</div>
+		</div>
+	</div>
+
+	<div class="pause">
+		<div class="contentPause">
+			<div class="dota">Pause</div>
+			<div class="dota">Press"Esc" to continued</div>
+			<button>Back to Menu</button>
+		</div>
+	</div>
+
+	<div class="game">
+		<div class="boost_power">
+			<div class="boost">BOOST OFF</div>
+			<div class="score">Score: 0</div>
+			<div class="speed_power">
+				<div class="shell"></div>
+				<span>press"space"</span>
+			</div>
+		</div>
+		<div class="snake head"></div>
+		<div class="apple"></div>
+		<div class="mute">
+			<div class="imgToggle">
+				<div data-id="soundMute"></div>
+				<p class="stext">On Music(on/off)</p>
+			</div>
+
+			<div class="imgToggle">
+				<div class="effectMute"></div>
+				<p class="etext">On Effect(on/off)</p>
+			</div>
+		</div>
+
+		<div class="hightScore">Hight Score: 0 (wallOn)</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
